@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChooseCalcController">
+   <children>
+      <ImageView fitHeight="543.0" fitWidth="862.0" layoutX="-8.0" layoutY="-6.0" pickOnBounds="true">
+         <image>
+            <Image url="@../pictures/choosecalculator2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="177.0" layoutY="29.0" prefHeight="97.0" prefWidth="492.0" text="Válassz kalkulátort" textFill="#cdbebe">
+         <font>
+            <Font name="Stencil" size="43.0" />
+         </font>
+      </Label>
+      <Button fx:id="chooseBmiButt" contentDisplay="CENTER" layoutX="59.0" layoutY="160.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="300.0" prefWidth="315.0" text="BMI">
+         <font>
+            <Font name="Stencil" size="58.0" />
+         </font>
+      </Button>
+      <Button fx:id="chooseCalButt" contentDisplay="CENTER" layoutX="478.0" layoutY="160.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="300.0" prefWidth="315.0" text="Kalória">
+         <font>
+            <Font name="Stencil" size="55.0" />
+         </font>
+      </Button>
+      <Button fx:id="chooseback" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="33.0" prefWidth="70.0" text="Vissza" />
+   </children>
+</Pane>
