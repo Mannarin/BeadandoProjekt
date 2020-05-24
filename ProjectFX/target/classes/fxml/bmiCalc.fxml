@@ -45,10 +45,10 @@
       </Label>
       <ImageView fx:id="bmichart" fitHeight="236.0" fitWidth="479.0" layoutX="334.0" layoutY="165.0" pickOnBounds="true">
          <image>
-            <Image url="@../pictures/nbmi.PNG" />
+            <Image url="@../pictures/nbmi.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="backButt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#nextScene" text="Vissza" />
+      <Button fx:id="backButt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="26.0" prefWidth="69.0" text="Vissza" />
       <Label fx:id="bminfo" layoutX="156.0" layoutY="449.0" prefHeight="40.0" prefWidth="479.0" text="Info:" textFill="#ffbb00">
          <font>
             <Font size="28.0" />

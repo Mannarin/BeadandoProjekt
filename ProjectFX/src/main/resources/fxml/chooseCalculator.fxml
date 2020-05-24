@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChooseCalcController">
    <children>
       <ImageView fitHeight="543.0" fitWidth="862.0" layoutX="-8.0" layoutY="-6.0" pickOnBounds="true">
@@ -30,6 +29,6 @@
             <Font name="Stencil" size="55.0" />
          </font>
       </Button>
-      <Button fx:id="chooseback" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="33.0" prefWidth="70.0" text="Vissza" />
+      <Button fx:id="chooseback" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="30.0" prefWidth="76.0" text="Vissza" />
    </children>
 </Pane>
