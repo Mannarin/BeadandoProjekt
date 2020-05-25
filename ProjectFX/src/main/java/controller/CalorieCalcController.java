@@ -34,15 +34,21 @@ public class CalorieCalcController {
     @FXML
     private Label prot;
 
-    public void nextScene(ActionEvent actionEvent) throws IOException {
+    public void nextScene(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/chooseCalculator.fxml"));
         Parent root = fxmlLoader.load();
-        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
         log.info("Back to Choose Calculator Button was pressed.");
     }
 
-    public void searchProductInDB(){}
+    public void logDailyCal(ActionEvent event) {
+  /*  Button button = (Button) event.getSource();
+
+        if(button.getId().equals("logButt")) {
+        }
+        }*/
+    }
 
 }

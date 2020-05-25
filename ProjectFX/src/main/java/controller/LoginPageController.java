@@ -10,6 +10,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import lombok.extern.log4j.Log4j2;
+import model.Product;
+import util.ProductDao;
 
 import java.io.IOException;
 @Log4j2
@@ -21,9 +23,7 @@ public class LoginPageController {
     @FXML
     private Label warningText;
 
-    public void nextScene(){
 
-    }
     public void nextScene(ActionEvent event) throws IOException {
         if (login.getText().isEmpty()) {
             warningText.setText(" You must give your username.");

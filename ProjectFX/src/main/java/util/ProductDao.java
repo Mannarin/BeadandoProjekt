@@ -3,7 +3,6 @@ package util;
 import model.Product;
 
 import javax.persistence.Persistence;
-import java.util.Optional;
 
 public class ProductDao extends BasicDao<Product> {
 
@@ -16,7 +15,7 @@ public class ProductDao extends BasicDao<Product> {
     public static ProductDao getInstance() {
         if (instance == null) {
             instance = new ProductDao();
-            instance.setEntityManager(Persistence.createEntityManagerFactory("test").createEntityManager());
+            instance.setEntityManager(Persistence.createEntityManagerFactory("te").createEntityManager());
         }
         return instance;
     }

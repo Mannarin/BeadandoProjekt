@@ -22,7 +22,7 @@
          </font>
       </Label>
       <TextField fx:id="product" layoutX="53.0" layoutY="143.0" prefHeight="25.0" prefWidth="358.0" />
-      <Button fx:id="productok" layoutX="419.0" layoutY="143.0" mnemonicParsing="false" onAction="#searchProductInDB" text="OK" />
+      <Button fx:id="productok" layoutX="419.0" layoutY="143.0" mnemonicParsing="false" onAction="#logDailyCal" text="OK" />
       <TextField fx:id="gramm" layoutX="562.0" layoutY="142.0" />
       <Button fx:id="grok" layoutX="718.0" layoutY="142.0" mnemonicParsing="false" text="OK" />
       <Label layoutX="203.0" layoutY="102.0" prefHeight="32.0" prefWidth="67.0" text="What?" textFill="WHITE">
@@ -88,5 +88,6 @@
             <Font size="25.0" />
          </font>
       </Label>
+      <Button fx:id="logButt" layoutX="743.0" layoutY="473.0" mnemonicParsing="false" onAction="#logDailyCal" prefHeight="26.0" prefWidth="67.0" text="Log" />
    </children>
 </Pane>

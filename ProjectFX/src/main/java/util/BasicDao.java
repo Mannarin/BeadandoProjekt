@@ -1,5 +1,6 @@
 package util;
 
+import lombok.extern.log4j.Log4j2;
 import model.Product;
 
 import javax.persistence.EntityManager;
@@ -13,6 +14,7 @@ import java.util.Optional;
  *
  * @param <T> the type of the entity class
  */
+@Log4j2
 public abstract class BasicDao<T> {
 
     protected Class<T> entityClass;
