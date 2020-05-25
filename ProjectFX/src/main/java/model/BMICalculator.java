@@ -1,8 +1,10 @@
 package model;
 
+import controller.CalorieCalcController;
+
 public class BMICalculator {
 
-   //private int age;
+    private int age;
     private String weight;
     private String height;
 
@@ -14,9 +16,9 @@ public class BMICalculator {
 
     }
 
-   /* public String chartBMI(String age, String bmi) {
+    public String chartBMI(String age, String bmi) {
             int ageInt = Integer.parseInt(age);
-            int bmiInt = Integer.parseInt(bmi);
+            int bmiInt = (int) Double.parseDouble(bmi);
             String info = "";
             if (ageInt >= 18 && ageInt <= 24) {
                 if (bmiInt < 19) {
@@ -95,5 +97,5 @@ public class BMICalculator {
                 return "Your age is not between 18 and 120.";
             }
         return info;
-    }*/
+    }
 }

@@ -8,9 +8,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import lombok.extern.log4j.Log4j2;
 
 import java.io.IOException;
-
+@Log4j2
 public class ChooseCalcController {
 
     public void nextScene(ActionEvent event) throws IOException {
@@ -23,6 +24,7 @@ public class ChooseCalcController {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
+        log.info("BMI Button was pressed.");
         }
         else if (button.getId().equals("chooseCalButt"))
         {
@@ -31,6 +33,8 @@ public class ChooseCalcController {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
+
+            log.info("Calorie Button was pressed.");
         }
         else if ( button.getId().equals("chooseback"))
                 {
@@ -39,6 +43,9 @@ public class ChooseCalcController {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
+                    log.info("Back to Login Page Button was pressed.");
         }
     }
+
+
 }

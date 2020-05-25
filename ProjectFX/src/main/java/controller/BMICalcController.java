@@ -9,12 +9,19 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j2;
 import model.BMICalculator;
 
 import java.io.IOException;
+@Log4j2
 
 public class BMICalcController {
+
+    @FXML
+    private Label bminfo;
 
     @FXML
     private TextField year;
@@ -37,6 +44,7 @@ public class BMICalcController {
 
     public void calcBMI(ActionEvent event){
         bmi.setText(bmiCalculator.calculateBMI(weight.getText(),height.getText()));
+        bminfo.setText(bmiCalculator.chartBMI(year.getText(),bmi.getText()));
     }
 
     public void nextScene(ActionEvent event) throws IOException {
@@ -48,8 +56,8 @@ public class BMICalcController {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
+        log.info("Back to Choose Calculator Button was pressed.");
     }}
-
 
 
 }

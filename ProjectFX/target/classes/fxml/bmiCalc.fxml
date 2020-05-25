@@ -18,17 +18,17 @@
       <TextField fx:id="height" layoutX="156.0" layoutY="278.0" />
       <TextField fx:id="year" layoutX="156.0" layoutY="174.0" />
       <TextField fx:id="weight" layoutX="156.0" layoutY="227.0" />
-      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="166.0" prefHeight="32.0" prefWidth="101.0" text="Életkor (év):" textFill="#ffbb00">
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="166.0" prefHeight="32.0" prefWidth="101.0" text="Age (year):" textFill="#ffbb00">
          <font>
             <Font name="Stencil" size="12.0" />
          </font>
       </Label>
-      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="219.0" prefHeight="32.0" prefWidth="101.0" text="Testsúly (kg):" textFill="#ffbb00">
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="219.0" prefHeight="32.0" prefWidth="101.0" text="Weight (kg):" textFill="#ffbb00">
          <font>
             <Font name="Stencil" size="12.0" />
          </font>
       </Label>
-      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="270.0" prefHeight="32.0" prefWidth="101.0" text="Magasság (cm):" textFill="#ffbb00">
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="270.0" prefHeight="32.0" prefWidth="101.0" text="Height (cm):" textFill="#ffbb00">
          <font>
             <Font name="Stencil" size="12.0" />
          </font>
@@ -38,7 +38,7 @@
             <Font name="Stencil" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="276.0" layoutY="48.0" prefHeight="43.0" prefWidth="307.0" text="BMI kalkulátor" textFill="#ffbb00">
+      <Label layoutX="276.0" layoutY="48.0" prefHeight="43.0" prefWidth="307.0" text="BMI Calculator" textFill="#ffbb00">
          <font>
             <Font name="Stencil" size="34.0" />
          </font>
@@ -48,8 +48,8 @@
             <Image url="@../pictures/nbmi.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="backButt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="26.0" prefWidth="69.0" text="Vissza" />
-      <Label fx:id="bminfo" layoutX="156.0" layoutY="449.0" prefHeight="40.0" prefWidth="479.0" text="Info:" textFill="#ffbb00">
+      <Button fx:id="backButt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="26.0" prefWidth="69.0" text="Back" />
+      <Label fx:id="bminfo" layoutX="156.0" layoutY="449.0" prefHeight="40.0" prefWidth="479.0" textFill="#ffbb00">
          <font>
             <Font size="28.0" />
          </font>

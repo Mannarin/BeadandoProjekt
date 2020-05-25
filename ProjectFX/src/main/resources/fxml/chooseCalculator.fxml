@@ -14,7 +14,7 @@
             <Image url="@../pictures/choosecalculator2.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="177.0" layoutY="29.0" prefHeight="97.0" prefWidth="492.0" text="Válassz kalkulátort" textFill="#cdbebe">
+      <Label layoutX="229.0" layoutY="32.0" prefHeight="97.0" prefWidth="389.0" text="Choose calculator" textFill="#cdbebe">
          <font>
             <Font name="Stencil" size="43.0" />
          </font>
@@ -24,11 +24,11 @@
             <Font name="Stencil" size="58.0" />
          </font>
       </Button>
-      <Button fx:id="chooseCalButt" contentDisplay="CENTER" layoutX="478.0" layoutY="160.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="300.0" prefWidth="315.0" text="Kalória">
+      <Button fx:id="chooseCalButt" contentDisplay="CENTER" layoutX="478.0" layoutY="160.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="300.0" prefWidth="315.0" text="Calorie">
          <font>
             <Font name="Stencil" size="55.0" />
          </font>
       </Button>
-      <Button fx:id="chooseback" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="30.0" prefWidth="76.0" text="Vissza" />
+      <Button fx:id="chooseback" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="30.0" prefWidth="76.0" text="Back" />
    </children>
 </Pane>

@@ -16,47 +16,47 @@
             <Image url="@../pictures/calback.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="302.0" layoutY="32.0" prefHeight="51.0" prefWidth="232.0" text="Mit ettél ma?" textFill="WHITE">
+      <Label layoutX="260.0" layoutY="27.0" prefHeight="51.0" prefWidth="303.0" text="What did you eat?" textFill="WHITE">
          <font>
             <Font name="Stencil" size="31.0" />
          </font>
       </Label>
       <TextField fx:id="product" layoutX="53.0" layoutY="143.0" prefHeight="25.0" prefWidth="358.0" />
-      <Button fx:id="productok" layoutX="419.0" layoutY="143.0" mnemonicParsing="false" text="OK" />
+      <Button fx:id="productok" layoutX="419.0" layoutY="143.0" mnemonicParsing="false" onAction="#searchProductInDB" text="OK" />
       <TextField fx:id="gramm" layoutX="562.0" layoutY="142.0" />
       <Button fx:id="grok" layoutX="718.0" layoutY="142.0" mnemonicParsing="false" text="OK" />
-      <Label layoutX="203.0" layoutY="102.0" prefHeight="32.0" prefWidth="67.0" text="Mit?" textFill="WHITE">
+      <Label layoutX="203.0" layoutY="102.0" prefHeight="32.0" prefWidth="67.0" text="What?" textFill="WHITE">
          <font>
             <Font name="Stencil" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="584.0" layoutY="108.0" text="Mennyit? (g)" textFill="WHITE">
+      <Label layoutX="584.0" layoutY="108.0" text="Amount? (g)" textFill="WHITE">
          <font>
             <Font name="Stencil" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="53.0" layoutY="245.0" prefHeight="40.0" prefWidth="128.0" text="Kalória:" textFill="WHITE">
+      <Label alignment="CENTER_RIGHT" layoutX="53.0" layoutY="245.0" prefHeight="40.0" prefWidth="128.0" text="Calorie:" textFill="WHITE">
          <font>
             <Font name="Stencil" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="53.0" layoutY="299.0" prefHeight="40.0" prefWidth="128.0" text="Zsír:" textFill="WHITE">
+      <Label alignment="CENTER_RIGHT" layoutX="62.0" layoutY="300.0" prefHeight="40.0" prefWidth="128.0" text="Fat:" textFill="WHITE">
          <font>
             <Font name="Stencil" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="53.0" layoutY="353.0" prefHeight="40.0" prefWidth="128.0" text="Szénhidrát:" textFill="WHITE">
+      <Label layoutX="53.0" layoutY="353.0" prefHeight="40.0" prefWidth="145.0" text="Carbohydate:" textFill="WHITE">
          <font>
             <Font name="Stencil" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="53.0" layoutY="408.0" prefHeight="40.0" prefWidth="128.0" text="Fehérje:" textFill="WHITE">
+      <Label alignment="CENTER_RIGHT" layoutX="53.0" layoutY="408.0" prefHeight="40.0" prefWidth="128.0" text="Protein:" textFill="WHITE">
          <font>
             <Font name="Stencil" size="20.0" />
          </font>
       </Label>
-      <Button fx:id="backButt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="32.0" prefWidth="67.0" style="-fx-pref-height: 26;" text="Vissza" textFill="#220000" />
-      <Label fx:id="kcal" layoutX="187.0" layoutY="253.0" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-min-height: 25;" textFill="WHITE">
+      <Button fx:id="backButt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="32.0" prefWidth="67.0" style="-fx-pref-height: 26;" text="Back" textFill="#220000" />
+      <Label fx:id="kcal" layoutX="217.0" layoutY="253.0" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-min-height: 25;" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -64,7 +64,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="fat" layoutX="187.0" layoutY="307.0" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-min-height: 25;" textFill="WHITE">
+      <Label fx:id="fat" layoutX="217.0" layoutY="307.0" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-min-height: 25;" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -72,7 +72,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="carbo" layoutX="187.0" layoutY="361.0" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-min-height: 25;" textFill="WHITE">
+      <Label fx:id="carbo" layoutX="217.0" layoutY="361.0" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-min-height: 25;" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -80,7 +80,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="prot" layoutX="187.0" layoutY="416.0" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-min-height: 25;" textFill="WHITE">
+      <Label fx:id="prot" layoutX="217.0" layoutY="416.0" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-min-height: 25;" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>

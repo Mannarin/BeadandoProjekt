@@ -6,14 +6,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import lombok.extern.log4j.Log4j2;
 
 import java.io.IOException;
+@Log4j2
 
 public class CalorieCalcController {
-
     @FXML
     private TextField product;
 
@@ -38,6 +40,9 @@ public class CalorieCalcController {
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
+        log.info("Back to Choose Calculator Button was pressed.");
     }
+
+    public void searchProductInDB(){}
 
 }

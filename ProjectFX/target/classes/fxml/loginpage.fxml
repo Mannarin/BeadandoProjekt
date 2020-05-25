@@ -16,18 +16,18 @@
             <Image url="@../pictures/loginpage2.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="79.0" layoutY="50.0" prefHeight="66.0" prefWidth="533.0" text="BMI &amp; Kalória Kalkulátor" textFill="#b59f9f">
+      <Label layoutX="79.0" layoutY="50.0" prefHeight="66.0" prefWidth="533.0" text="BMI &amp; Calorie Calculator" textFill="#b59f9f">
          <font>
             <Font name="Stencil" size="37.0" />
          </font>
       </Label>
-      <Label layoutX="188.0" layoutY="200.0" prefHeight="39.0" prefWidth="237.0" text="Bejelentkezés" textFill="#b59f9f">
+      <Label layoutX="188.0" layoutY="200.0" prefHeight="39.0" prefWidth="237.0" text="Login" textFill="#b59f9f">
          <font>
             <Font name="Stencil" size="29.0" />
          </font>
       </Label>
       <TextField fx:id="login" layoutX="188.0" layoutY="270.0" prefHeight="43.0" prefWidth="226.0" />
-      <Button fx:id="nextButt" layoutX="188.0" layoutY="340.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="32.0" prefWidth="105.0" text="Tovább" textFill="WHITE">
+      <Button fx:id="nextButt" layoutX="188.0" layoutY="340.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="32.0" prefWidth="105.0" text="Next" textFill="WHITE">
          <rotationAxis>
             <Point3D />
          </rotationAxis>
@@ -35,7 +35,7 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Label fx:id="errorMess" alignment="CENTER" layoutX="42.0" layoutY="441.0" prefHeight="43.0" prefWidth="420.0" textAlignment="CENTER" textFill="RED">
+      <Label fx:id="warningText" alignment="CENTER" layoutX="42.0" layoutY="441.0" prefHeight="43.0" prefWidth="420.0" textAlignment="CENTER" textFill="RED">
          <font>
             <Font name="Stencil" size="22.0" />
          </font>
